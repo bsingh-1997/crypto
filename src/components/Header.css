@@ -1,0 +1,20 @@
+.header{
+  background-color: black;
+  height: 3rem;
+  display: flex;
+}
+.header ul{
+display: flex;
+margin-left: 30%;
+}
+.header ul li {
+    list-style: none;
+    /* display: flex; */
+    /* display: ; */
+}
+.lin{
+    color: aqua;
+    display: inline;
+    text-decoration: none;
+    margin: 20px;
+}

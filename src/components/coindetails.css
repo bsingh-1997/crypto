@@ -1,0 +1,13 @@
+.stockup{
+    height: 20px;
+    margin-right: 5px;
+}
+.rgp{
+    display: inline-flex;
+}
+.rank{
+    background-color: black;
+    color: white;
+    width: 33px;
+    margin-left: 49vw;
+}
