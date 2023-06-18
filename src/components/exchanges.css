@@ -59,6 +59,16 @@ text{
     overflow: scroll;
 
 }
+.bntn{
+        margin-right: 3px;
+        /* background-color: grey; */
+        padding: 7px 7px;
+        display: flex;
+        width: 20px;
+        border-radius: 6px;
+        border: 1px solid black;
+    
+}
 @media screen and (max-width:500px) {
     .cardscontainer{
         display: flex;
@@ -70,9 +80,19 @@ text{
     }
     .butncnt{
             width: 87vw;
-            height: 60px;
+            height: 34px;
             display: inline-flex;
             overflow: scroll;
      
+    }
+    .bntn{
+        display: block;
+        margin-right: 3px;
+        /* background-color: grey; */
+        padding: 5px 7px;
+        display: flex;
+        width: 20px;
+        border-radius: 6px;
+        border: 1px solid black;
     }
 }

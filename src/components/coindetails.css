@@ -16,22 +16,42 @@
 .mainbox{
     padding: 0rem 2rem;
 }
-.tmfrm{
+/* .tmfrm{
     background-color: whitesmoke;
     margin: 0 5px;
     border: 1px solid black;
     border-radius: 4px;
     height: 26px;
     width: 60px;
+} */
+
+.tmfrm {
+    padding: 0px;
+    background-color: white;
+    margin: 0px 5px;
+    border: 1px solid black;
+    border-radius: 4px;
+    height: 31px;
+    width: 56px;
 }
-.tmfry{
+/* .tmfry{
     display: flex;
     padding: 1rem 8%;
+} */
+
+.tmfrm {
+    padding: 0px;
+    background-color: white;
+    margin: 0px 5px;
+    border: 1px solid black;
+    border-radius: 4px;
+    height: 31px;
+    width: 56px;
 }
 .tmfrm:hover{
-    transform: scale(1.1);
-    transition: 0.1s;
-    background-color: rgb(255, 109, 133);
+    /* transform: scale(1.1); */
+    transition: 0.4s;
+    background-color: black;
 }
 .rbtn{
     margin-left: -70%;
@@ -131,5 +151,27 @@
 }
 canvas{
     height: 400px;
+}
+.tmfrm{
+    display: flex;
+    background-color: white;
+    margin: 0px 5px;
+    border: 1px solid black;
+    border-radius: 4px;
+    height: 27px;
+    width: 60px;
+    padding: 5px 9px;
+
+}
+.tmfry {
+    width: 91vw;
+    overflow: scroll;
+    display: flex;
+    padding: 1rem 3%;
+}
+.tmfrm:hover{
+    /* transform: scale(1.1); */
+    transition: 0.4s;
+    background-color: rgb(255, 109, 133);
 }
 }

@@ -59,9 +59,9 @@ const btns = new Array(132).fill(1)
                <div className='butncnt'>
               {
                 btns.map((item,index)=>(
-                  <button key={index} onClick={()=>changePage(index + 1)}>
+                  <div className='bntn' key={index} onClick={()=>changePage(index + 1)}>
                   {index + 1}
-                  </button>
+                  </div>
                   ))
               }
             
