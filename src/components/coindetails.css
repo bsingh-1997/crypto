@@ -47,11 +47,13 @@
     border-radius: 4px;
     height: 31px;
     width: 56px;
+    color: black;
 }
 .tmfrm:hover{
     /* transform: scale(1.1); */
     transition: 0.4s;
     background-color: black;
+    color: white;
 }
 .rbtn{
     margin-left: -70%;
@@ -161,6 +163,7 @@ canvas{
     height: 27px;
     width: 60px;
     padding: 5px 9px;
+    color: black;
 
 }
 .tmfry {
@@ -172,6 +175,7 @@ canvas{
 .tmfrm:hover{
     /* transform: scale(1.1); */
     transition: 0.4s;
-    background-color: rgb(255, 109, 133);
+    background-color: black;
+    color: white;
 }
 }
