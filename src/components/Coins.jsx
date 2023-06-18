@@ -35,14 +35,14 @@ const btns = new Array(132).fill(1)
   }, [currency,page])
   
   if(error){
-    return <Error message="error while fetching Coins"/>
+    return <Error message="Error while fetching Coins !"/>
   }
 
   return (
     <div className='exbody'>
       {loading?<Loader/>:<>
 
-        <div  value={currency} onChange={(e)=>setCurrency(e.target.value)}>
+        <div className='rdoo' value={currency} onChange={(e)=>setCurrency(e.target.value)}>
          <input type="radio" name="rad" value="inr"/>INR 
          <input type="radio" name="rad" value="usd"/>USD 
          <input type="radio" name="rad" value={"eur"}/>EUR 
@@ -56,7 +56,7 @@ const btns = new Array(132).fill(1)
       
          ))}
           </div>   
-               <div>
+               <div className='butncnt'>
               {
                 btns.map((item,index)=>(
                   <button key={index} onClick={()=>changePage(index + 1)}>

@@ -6,10 +6,10 @@ import './coincard.css'
         <div className='excoinss'>
         {/* <Link to = '/coin/${id}' > */}
         <Link to = {`/coins/${id}`} >
-        <div ><img src={img}></img>
-        <heading>{symbol} </heading>
-        <text>{name}</text>
-        <text>{price?`${currencySymbol}${price}`:"NA"}</text>
+        <div ><img className="logimg" src={img}></img>
+        <div className='blk' >{symbol} </div>
+        <div className='blk' >{name}</div>
+        <div className='blk' >{price?`${currencySymbol}${price}`:"NA"}</div>
         </div>
         </Link>
         </div>

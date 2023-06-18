@@ -1,4 +1,18 @@
 .excoinss{
-    width: 17rem;
-    padding: .8rem 1rem;
+    width: 11rem;
+    padding: 0.5rem 1rem;
+    /* border: .5px solid black; */
+    margin: 1rem 1rem;
+    box-shadow: 0 0 15px rgb(165, 165, 165);
+
+}
+.excoinss:hover{
+    transform: scale(1.1);
+    transition: .3s
+}
+.logimg{
+    width: 150px;
+}
+.blk{
+    color: black;
 }

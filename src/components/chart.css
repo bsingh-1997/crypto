@@ -1,0 +1,15 @@
+.crt{
+    margin: 1rem 4rem;
+}
+
+@media screen and (max-width:600px) {
+    .crt{
+        margin: 0;
+        /* height: 40vh; */
+    }
+   canvas{
+    height: 400px;
+   }
+    
+    
+}

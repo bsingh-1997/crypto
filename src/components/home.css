@@ -1,0 +1,247 @@
+.hedd{
+    padding: 0 10%;
+    /* margin-top: 100px; */
+    /* background-color: #213571; */
+    /* height: 600px; */
+}
+.details{
+    width: 70%;
+    padding: 5rem 8rem ;
+    /* display: flex; */
+    text-align: left;
+    font-size: 25px;
+    display: grid;
+}
+.box1{
+    display: inline-flex;
+}
+.btc{
+    width: 20vw;
+}
+.heading{
+    font-size: 30px;
+    padding: 10px 10px;
+    margin-top: 40px;
+    margin-bottom: -40px;
+    font-weight: 500;
+}
+.heading2{
+    font-size: 30px;
+    padding: 10px 10px;
+    margin: 20px 0  ;
+    font-weight: 500;
+}
+.heading3{
+    font-size: 30px;
+    padding: 10px 10px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+.logo{
+    padding: 3rem 0;
+}
+.bbutton{
+    /* color: white; */
+    /* border: 1px solid black; */
+    /* background-color: blue; */
+    /* height: 40px; */
+    /* font-size: 20px; */
+    /* width: 210px; */
+    /* border-radius: 20px; */
+    /* margin-top: 15px; */
+    /* border: none; */
+    /* margin-right: 10px; */
+    /* box-shadow: 0 0 3%; */
+    padding: 5px 22px;
+            /* color: white; */
+            border: 1px solid black;
+            /* background-color: blue; */
+            height: 31px;
+            font-size: 20px;
+            width: 170px;
+            border-radius: 20px;
+            margin-top: 15px;
+            /* border: none; */
+            margin-right: 10px;
+}
+.bbutton:hover{
+/* transform: scale1.1);; */
+transition: 0.5s;
+color: white;
+background-color: black;
+}
+.btncnt{
+    display: inline-flex;
+}
+a{
+    text-decoration:none !important;
+    color: black;
+}
+.clis{
+    display: inline-flex;
+}
+.btclogo{
+    width: 210px;
+    /* background-color: red; */
+    border: .5px solid black;
+    margin-right: 20px;
+    height: 65px;
+    /* height: 22px; */
+    text-align: center;
+    border-radius: 7px;
+    /* padding: 30px; */
+    margin-bottom: 15px;
+
+    display: flex;
+}
+.btclogo:hover{
+    transform:scale(1.1) ;
+    transition: 0.3s;
+}
+.logsiz{
+    width: 70px;
+    padding-left: 65px;
+}
+.pp{
+    padding: 20px;
+    width: 170px;
+    /* background-color: red; */
+    border: .5px solid black;
+    margin-right: 20px;
+    height: 25px;
+    /* height: 22px; */
+    text-align: center;
+    border-radius: 7px;
+    /* padding: 30px; */
+    margin-bottom: 15px;
+
+    display: flex;
+}
+.box4{
+    font-size: 20px;
+    word-wrap: break-word;
+    padding: 0 2rem;
+}
+
+@media screen and (max-width:430px) {
+    .hedd {
+        padding: 0 0%;
+        /* background-color: #213571; */
+        /* height: 600px; */
+        display: grid;
+        width: 100%;
+    }
+    .heading {
+        margin: 0 3%;
+        font-size: 30px;
+        /* padding: 10px 10px; */
+        margin-top: 20px;
+        margin-bottom: -40px;
+        font-weight: 500;
+        width: 90vw;
+        height: 88px;
+    }
+    .box1 {
+        /* display: inline-flex; */
+        width: 98%;
+        display: block;
+    }
+    .details {
+        /* width: 34%; */
+        padding: 3rem 4rem;
+        /* display: flex; */
+        text-align: left;
+        font-size: 25px;
+        display: grid;
+    }
+    .btc{
+        width: 80vw;
+    }
+    .heading2 {
+        font-size: 30px;
+        padding: 10px 10px;
+        margin: 20px 0;
+        font-weight: 500;
+        width: 94vw;
+    }
+    .clis {
+        margin: 0 24vw;
+        display: inline-block;
+        width: 52vw;
+    }
+    .btclogo {
+        width: 51vw;
+        /* background-color: red; */
+        border: .5px solid black;
+        margin-right: 20px;
+        height: 65px;
+        /* height: 22px; */
+        /* text-align: center; */
+        border-radius: 7px;
+        /* padding: 30px; */
+        margin-bottom: 15px;
+        display: flex;
+    }
+    .logsiz {
+        width: 70px;
+        padding-left: 16vw;
+    }
+    .heading3 {
+        font-size: 30px;
+        padding: 10px 16px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        font-weight: 500;
+    }
+    .box4 {
+        font-size: 20px;
+        word-wrap: break-word;
+        padding: 0 2rem;
+    }
+    .footer{
+        /* display: none; */
+    }
+    .header{
+        display: none;
+    }
+    .pp{
+        color: black;
+    font-size: 17px;
+    text-decoration: none;
+    padding: 19px 48px;
+    width: 28vw;
+    /* background-color: red; */
+    border: .5px solid black;
+    margin-right: 20px;
+    height: 27px;
+    /* height: 22px; */
+    /* text-align: center; */
+    border-radius: 7px;
+    /* padding: 30px; */
+    margin-bottom: 15px;
+    display: flex;
+
+    }
+    .bbutton{
+            padding: 5px 22px;
+            /* color: white; */
+            border: 1px solid black;
+            /* background-color: blue; */
+            height: 31px;
+            font-size: 20px;
+            width: 170px;
+            border-radius: 20px;
+            margin-top: 15px;
+            /* border: none; */
+            margin-right: 10px;
+        
+    }
+    .bbutton:hover{
+        background-color: black;
+        color: white;
+    }
+    .btncnt{
+        display: block;
+    }
+}

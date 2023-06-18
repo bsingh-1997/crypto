@@ -96,26 +96,29 @@ const params = useParams()
     fetchCoins()
   }, [params.id,currency,days])
   
-  if(error) return<Error message={"error while fetching coin"}/>;
+  if(error) return<Error message={"Error while fetching coin !"}/>;
   
   
   return (
-    <container>
+    <container className='mainbox' >
       {
         loading?<Loader/>:(
           <>
-          <box>
-            g
+          <box className='chrtbox'> 
+            
             <Chart arr={chartArray} days={days} currency = {currencySymbol} />
           </box>
 
+          <div className='tmfry'>
         {
+
           btns.map((i)=>(
-            <button key={i} onClick={(()=>switchChartStats(i))}>{i}</button>
+            <button className='tmfrm' key={i} onClick={(()=>switchChartStats(i))}>{i}</button>
           ))
         }
+          </div>
 
-        <div  value={currency} onChange={(e)=>setCurrency(e.target.value)}>
+        <div className='rbtn' value={currency} onChange={(e)=>setCurrency(e.target.value)}>
          <input type="radio" name="rad" value="inr"/>INR 
          <input type="radio" name="rad" value="usd"/>USD 
          <input type="radio" name="rad" value={"eur"}/>EUR 
@@ -124,23 +127,31 @@ const params = useParams()
           <div>
             <div>Last Updated On {"  "} 
             {(coin.market_data.last_updated)}</div>
-            <img src={coin.image.large}/>
+
+        <div className='ccard' >
+
+
+            <img className='coino'  src={coin.image.large}/>
           
-          <div>{coin.name}</div>
-          <div>{currencySymbol}{coin.market_data.current_price[currency]}</div>
-          <div className='rgp'> {coin.market_data.price_change_percentage_24h >= 0 ? <div><img className='stockup' src="https://media.istockphoto.com/id/1334431049/vector/up-arrow-and-circle.jpg?s=612x612&w=0&k=20&c=GMERrewDCr268lxO6MoTpCmsC2LnbwaZ5y3-osCQ3n8="/></div> : <div ><img className='stockup' src='https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Eo_circle_red_arrow-down.svg/2048px-Eo_circle_red_arrow-down.svg.png'/></div>} {coin.market_data.price_change_percentage_24h}% </div>
-          <div className='rank' >{`#${coin.market_cap_rank}`}</div>
+          <div className='nm'>{coin.name}</div>
+          <div className='nm'>{currencySymbol}{coin.market_data.current_price[currency]}</div>
+          <div className='nm'> {coin.market_data.price_change_percentage_24h >= 0 ? <div><img className='stockup' src="https://media.istockphoto.com/id/1334431049/vector/up-arrow-and-circle.jpg?s=612x612&w=0&k=20&c=GMERrewDCr268lxO6MoTpCmsC2LnbwaZ5y3-osCQ3n8="/></div> : <div ><img className='stockup' src='https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Eo_circle_red_arrow-down.svg/2048px-Eo_circle_red_arrow-down.svg.png'/></div>} {coin.market_data.price_change_percentage_24h}% </div>
+          <div className='rank ' >{`#${coin.market_cap_rank}`}</div>
           
+        </div>
         </div>
 
           <ProgressBar completed={50} high={`${currencySymbol}${coin.market_data.high_24h[currency]}`} low={`${currencySymbol}${coin.market_data.low_24h[currency]}`} bgcolor={"green"} />
 
-          <div>
-            <div><h5>Max Supply  </h5>{`Max Supply ${coin.market_data.max_supply}`} </div>
-            <div>{`Circulating Supply ${coin.market_data.circulating_supply}`} </div>
-            <div>{`Market Cap ${coin.market_data.market_cap[currency]}`} </div>
-            <div>{`All Time Low ${currencySymbol} ${coin.market_data.atl[currency]}`} </div>
-            <div>{`All Time High ${currencySymbol} ${coin.market_data.ath[currency]}`} </div>
+          <div className='containerdivs'>
+            <div className='disdet' ><div className='marg' >Max Supply</div><div className='marg2' >${coin.market_data.max_supply}</div> </div>
+            {/* <div>{`Circulating Supply ${coin.market_data.circulating_supply}`} </div> */}
+            <div className='disdet'><div className='marg'>Circulating Supply</div><div className='marg2'>
+            {coin.market_data.circulating_supply}
+              </div> </div>
+            <div className='disdet'><div className='marg'>Market Cap</div><div className='marg2'>{coin.market_data.market_cap[currency]}</div> </div>
+            <div className='disdet'><div className='marg'>All Time Low </div><div className='marg2'>{currencySymbol}{coin.market_data.atl[currency]}</div> </div>
+            <div className='disdet'><div className='marg'>All Time High</div><div className='marg2'>{currencySymbol}{coin.market_data.ath[currency]}</div> </div>
           </div>
 
           </>

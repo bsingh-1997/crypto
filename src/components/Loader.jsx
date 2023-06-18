@@ -1,11 +1,11 @@
 import React from 'react'
-import logo from './loading3.gif'
+import logo from './throbber_13.gif'
 const Loader = () => {
   const styleload={
     // position: "absolute",
     display: "flex",
     // margin-left: "39%",
-    margin: "15% 39%",
+    margin: "15% 45%",
     width: "10vw"
 }
   

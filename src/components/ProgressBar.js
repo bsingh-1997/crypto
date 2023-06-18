@@ -12,17 +12,10 @@
 // };
 
 // export default ProgressBar;
-
+import './progressbar.css'
 const ProgressBar = (props) => {
     const { bgcolor, completed ,high,low} = props;
   
-    const containerStyles = {
-      height: "20px",
-      width: "27%",
-      backgroundColor: "#e0e0de",
-      borderRadius: 50,
-      margin: "10px 36vw",
-    };
   
     const fillerStyles = {
       height: "100%",
@@ -37,16 +30,15 @@ const ProgressBar = (props) => {
       color: "white",
       fontWeight: "bold",
     };
-    const pricestyle = {
-        display:"inline-flex"
-    }
+    
     const red ={
         margin:"0 2vw",
         "background-color": "#ffc6c6",
         color:"red"
     }
     const med ={
-        margin:"0 2vw"
+        margin:"0 17vw"
+        // width:"300px"
     }
     const green ={
         margin:"0 2vw",
@@ -54,14 +46,14 @@ const ProgressBar = (props) => {
         color:"green"
     }
     return (<>
-      <div style={containerStyles}>
+      <div className='containerStyles'>
         <div style={fillerStyles}>
           <span style={labelStyles}></span>
         </div>
       </div>
-      <price style={pricestyle}>
+      <price className='pricestyle'>
         <div style={red}>{low}</div>
-        <div style={med}>24H Range</div>
+        <div style={med}>24H_Range</div>
         <div style={green}>{high}</div>
       </price>
     </>

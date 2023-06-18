@@ -1,5 +1,5 @@
 import React from 'react'
-
+import './chart.css'
 import {Line} from "react-chartjs-2"
 import {Chart as ChartJs,CategoryScale,LinearScale,PointElement,LineElement,Title,Tooltip,Legend}from "chart.js"
 
@@ -27,10 +27,10 @@ const Chart = ({arr=[],currency,days}) => {
 }
 
     return (
-      <Line options={{
+      <Line className='crt' options={{
         responsive:true,
     }}
-    data={data}
+    data={data}  height={'100px'} 
     />
   )
 }
